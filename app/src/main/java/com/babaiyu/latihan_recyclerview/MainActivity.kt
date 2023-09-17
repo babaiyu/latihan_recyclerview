@@ -9,8 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MinumanAdapter(private val dataSet: Array<String>) :
-    RecyclerView.Adapter<MinumanAdapter.ViewHolder>() {
+class BulanAdapter(private val dataSet: Array<String>) :
+    RecyclerView.Adapter<BulanAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView
 
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
             "November-11",
             "Desember-12",
         )
-        val adapter = MinumanAdapter(dataSet)
+        val adapter = BulanAdapter(dataSet)
 
         val rvBulan: RecyclerView = findViewById(R.id.rv_month)
         rvBulan.layoutManager = LinearLayoutManager(this)
